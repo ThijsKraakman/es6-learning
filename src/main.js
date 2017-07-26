@@ -1,11 +1,9 @@
-let name = 'foo';
+function greet({name, age}) {
 
+  console.log(`Hello, ${name}. You are ${age}.`);
+}
 
-let template = `
-<div class="Alert">,
- <p>${name}</p>,
- </div>
-
-`;
-
-console.log(template);
+greet({
+  name: 'Luke',
+  age: 24
+});
