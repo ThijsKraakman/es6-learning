@@ -1,9 +1,33 @@
-function greet({name, age}) {
+class User {
+  constructor(username, email) {
+    this.username = username;
+    this.email = email;
+  }
 
-  console.log(`Hello, ${name}. You are ${age}.`);
+  static register(username, email) {
+    return new User(username, email);
+
+  }
+
+get foo() {
+  return 'foo';
+}
+  changeEmail(newEmail) {
+    this.email = newEmail;
+  }
 }
 
-greet({
-  name: 'Luke',
-  age: 24
-});
+let user = User.register('ThijsKraakman', 'thijskraakman@otutweofnf.com');
+
+console.dir(user.foo);
+//////////////////////////////
+
+function log(strategy) {
+  strategy.handle();
+}
+class consoleLogger {
+  handle(){
+    alert('using the alert strat to log');
+  }}
+
+log(new consoleLogger);
