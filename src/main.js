@@ -17,7 +17,7 @@ get foo() {
   }
 }
 
-let user = User.register('ThijsKraakman', 'thijskraakman@otutweofnf.com');
+let user = User.resgister('ThijsKraakman', 'thijskraakman@otutweofnf.com');
 
 console.dir(user.foo);
 //////////////////////////////
