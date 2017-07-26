@@ -1,4 +1,4 @@
-export class TaskCollection {
+class TaskCollection {
   constructor(tasks = []) {
       this.tasks = tasks;
   }
@@ -7,3 +7,5 @@ export class TaskCollection {
     console.log(this.tasks);
   }
 }
+
+export default TaskCollection;
