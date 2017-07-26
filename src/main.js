@@ -1,33 +1,7 @@
-class User {
-  constructor(username, email) {
-    this.username = username;
-    this.email = email;
-  }
+import { TaskCollection } from './TaskCollection';
 
-  static register(username, email) {
-    return new User(username, email);
-
-  }
-
-get foo() {
-  return 'foo';
-}
-  changeEmail(newEmail) {
-    this.email = newEmail;
-  }
-}
-
-let user = User.register('ThijsKraakman', 'thijskraakman@otutweofnf.com');
-
-console.dir(user.foo);
-//////////////////////////////
-
-function log(strategy) {
-  strategy.handle();
-}
-class consoleLogger {
-  handle(){
-    alert('using the alert strat to log');
-  }}
-
-log(new consoleLogger);
+new TaskCollection([
+  'Go to the store',
+  'Play games',
+  'Eat pie'
+]).dump();
