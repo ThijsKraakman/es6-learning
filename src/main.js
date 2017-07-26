@@ -1,5 +1,11 @@
-function sum(...numbers) {
-    return numbers.reduce((prev, current) => prev + current);
-}
+let name = 'foo';
 
-console.log(sum(1, 2, 3));
+
+let template = `
+<div class="Alert">,
+ <p>${name}</p>,
+ </div>
+
+`;
+
+console.log(template);
