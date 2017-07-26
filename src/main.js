@@ -1,8 +1,5 @@
-function applyDiscount(cost, discount = .10) {
-
-
-  return cost - (cost * discount);
-
+function sum(...numbers) {
+    return numbers.reduce((prev, current) => prev + current);
 }
 
-alert(applyDiscount(100));
+console.log(sum(1, 2, 3));
