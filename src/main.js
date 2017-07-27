@@ -1,16 +1,12 @@
-class User {
-  constructor(name, isAdmin) {
-    this.name = name;
-    this.isAdmin = isAdmin;
+//Generators
+
+function *range(start, end) {
+  while(start <= end) {
+      yield start;
+
+      start++;
   }
+
+
 }
-
-let users = [
-  new User('Thijs', false),
-  new User('Jane', true),
-  new User('Jack', false)
-];
-
-console.log(
-  users.find(user => user.isAdmin).name
-);
+console.log([...range(1, 5)]);
