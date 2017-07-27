@@ -1,12 +1,8 @@
-//Generators
-
-function *range(start, end) {
-  while(start <= end) {
-      yield start;
-
-      start++;
-  }
-
-
-}
-console.log([...range(1, 5)]);
+//Sets
+/*
+let tags = ['php', 'javascript', 'vue', 'javascript'];
+let set = new Set(tags);
+console.log(set);
+*/
+var mentionedUsers = ['johndoe', 'janedoe', 'janedoe'];
+console.log(new Set(mentionedUsers));
